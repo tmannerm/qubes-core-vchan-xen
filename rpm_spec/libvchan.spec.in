@@ -2,7 +2,7 @@
 # The Qubes OS Project, http://www.qubes-os.org
 #
 # Copyright (C) 2010  Joanna Rutkowska <joanna@invisiblethingslab.com>
-# Copyright (C) 2010  Rafal Wojtczuk  <rafal@invisiblethingslab.com>
+# Copyright (C) 2010  Rafal Wojtczuk <rafal@invisiblethingslab.com>
 # Copyright (C) 2012  Marek Marczykowski <marmarek@invisiblethingslab.com>
 #
 # This program is free software; you can redistribute it and/or
@@ -21,21 +21,22 @@
 #
 #
 
-Name:		qubes-libvchan-xen
-Version:	@VERSION@
-Release:	1%{dist}
+Name:           qubes-libvchan-xen
+Version:        @VERSION@
+Release:        1%{dist}
 
-Summary:	Qubes vchan libraries
-License:	GPL v2 only
-Group:		Qubes
-Vendor:		Invisible Things Lab
-URL:		http://www.qubes-os.org
-Obsoletes:  qubes-core-libs < 2.1.2
-Provides:   qubes-core-libs
-Provides:   qubes-libvchan
-BuildRequires: gcc
-BuildRequires: xen-devel >= 4.2
-Source0:    %{name}-%{version}.tar.gz
+Summary:        Qubes vchan libraries
+License:        GPL v2 only
+Group:          Qubes
+Vendor:         Invisible Things Lab
+URL:            http://www.qubes-os.org
+
+Obsoletes:      qubes-core-libs < 2.1.2
+Provides:       qubes-core-libs
+Provides:       qubes-libvchan
+BuildRequires:  gcc
+BuildRequires:  xen-devel >= 4.2
+Source0:        %{name}-%{version}.tar.gz
 
 %description
 The Qubes core libraries for installation inside a Qubes Dom0 and VM.
@@ -69,7 +70,7 @@ Group:          Development/Sources
 Obsoletes:      qubes-core-appvm-devel
 Obsoletes:      qubes-core-vm-devel < 2.1.2
 Obsoletes:      qubes-core-libs-devel < 2.1.2
-Provides:      qubes-core-vm-devel
+Provides:       qubes-core-vm-devel
 Provides:       qubes-core-libs-devel
 Provides:       qubes-libvchan-devel
 Requires:       %{name} = %{version}-%{release}
